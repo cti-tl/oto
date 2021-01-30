@@ -28,6 +28,16 @@ body {
     "... ...... ..." 0px
     / 0px 1fr 0px;
 }
+
+body{
+    /* 左斜め */
+    background-color: #90cad44f;
+    background-image:
+    repeating-linear-gradient(45deg,
+     #fff, #fff 7px,
+     transparent 0, transparent 14px);
+}
+
 header {
   grid-area: header;
 }
@@ -48,6 +58,8 @@ footer {
 footer div.source {
   text-align: left;
   font-size: 1rem;
+  background-color:white;
+  padding:10px;
 }
 footer div.copyright {
   text-align: center;
