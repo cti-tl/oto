@@ -57,6 +57,7 @@ main {
 }
 main img{
   display:inline;
+  max-width:400px;
 }
 main img:not([alt]){
   filter: none;
