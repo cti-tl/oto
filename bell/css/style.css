@@ -46,14 +46,32 @@ h2,
 h3 {
   text-align: center;
 }
+header h2{
+  font-size:2rem;
+}
 main {
   grid-area: center;
 }
 main {
   text-align: center;
 }
+main img{
+  display:inline;
+}
+main img:not([alt]){
+  filter: none;
+}
 footer {
   grid-area: footer;
+}
+footer div{
+  display: flex;
+  flex-direction: column;
+}
+footer a{
+  vertical-align: top;
+  width:auto;
+  height:auto;
 }
 footer div.source {
   text-align: left;
@@ -63,13 +81,20 @@ footer div.source {
 } 
 footer div.banner {
     text-align: center;
+    width:100%;
+    vertical-align: middle;
+    padding:10px;
+}
+footer div.banner * {
+  margin:0px;
+  padding:0px;
 }
 footer div.copyright {
   text-align: center;
 }
 footer div.copyright small {
   color: gray;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 }
 @media screen and (max-width: 1000px) {
   body {

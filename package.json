@@ -13,9 +13,15 @@
     "lint-staged"
   ],
   "lint-staged": {
-    "*.{html,htm}": ["prettier"],
-    "*.{js,jsx}": ["eslint"],
-    "*.{css,scss}": ["stylelint"]
+    "*.{html,htm}": [
+      "prettier"
+    ],
+    "*.{js,jsx}": [
+      "eslint"
+    ],
+    "*.{css,scss}": [
+      "stylelint"
+    ]
   },
   "dependencies": {
     "prettier": "^2.2.1"
