@@ -6,6 +6,7 @@ const assets = [
   './css/style.css',
   './css/reset.css',
   './js/app.js',
+  './js/audio.js',
   './data/img_bell.png',
   './data/Onmtp-Ding02-2.mp3',
 ];
