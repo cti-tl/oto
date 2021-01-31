@@ -137,7 +137,7 @@ footer div.copyright {
 }
 footer div.copyright small {
   color: gray;
-  font-size: 0.6rem;
+  font-size: max(12px,0.6rem);
 }
 @media screen and (max-width: 1000px) {
   body {
