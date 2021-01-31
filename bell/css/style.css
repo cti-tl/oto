@@ -33,13 +33,16 @@ body {
     / 0px 1fr 0px;
 }
 
-body{
-    /* 左斜め */
-    background-color: #90cad44f;
-    background-image:
-    repeating-linear-gradient(45deg,
-     #fff, #fff 7px,
-     transparent 0, transparent 14px);
+body {
+  /* 左斜め */
+  background-color: #90cad44f;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #fff,
+    #fff 7px,
+    transparent 0,
+    transparent 14px
+  );
 }
 
 header {
@@ -50,8 +53,8 @@ h2,
 h3 {
   text-align: center;
 }
-header h2{
-  font-size:2rem;
+header h2 {
+  font-size: 2rem;
 }
 main {
   grid-area: center;
@@ -59,40 +62,43 @@ main {
 main {
   text-align: center;
 }
-main img{
-  display:inline;
-  max-width:400px;
+main img {
+  display: inline;
+  max-width: 400px;
 }
-main img:not([alt]){
+main img:not([alt]) {
   filter: none;
 }
 footer {
   grid-area: footer;
 }
-footer div{
+footer div {
   display: flex;
   flex-direction: column;
 }
-footer a{
+footer a {
   vertical-align: top;
-  width:auto;
-  height:auto;
+  width: auto;
+  height: auto;
 }
 footer div.source {
   text-align: left;
   font-size: 1rem;
-  background-color:white;
-  padding:10px;
-} 
+  background-color: white;
+  padding: 10px;
+}
 footer div.banner {
-    text-align: center;
-    width:100%;
-    vertical-align: middle;
-    padding:10px;
+  text-align: center;
+  width: 100%;
+  vertical-align: middle;
+  padding: 10px;
 }
 footer div.banner * {
-  margin:0px;
-  padding:0px;
+  margin: 0px;
+  padding: 0px;
+}
+footer div.banner img {
+  max-height: 80px;
 }
 footer div.copyright {
   text-align: center;
