@@ -1,3 +1,18 @@
+:root {
+  --main-text: #333;
+  --main-bg: #fff;
+  --main-stripe: #90cad44f;
+  --main-link: black;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-text: #ddd;
+    --main-bg: #000;
+    --main-stripe: #000000ec;
+    --main-link: gray;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -35,11 +50,11 @@ body {
 
 body {
   /* 左斜め */
-  background-color: #90cad44f;
+  background-color: var(--main-stripe);
   background-image: repeating-linear-gradient(
     45deg,
-    #fff,
-    #fff 7px,
+    var(--main-bg),
+    var(--main-bg) 7px,
     transparent 0,
     transparent 14px
   );
@@ -52,6 +67,16 @@ header h1,
 h2,
 h3 {
   text-align: center;
+  color: var(--main-text);
+  padding:10px;
+  box-sizing: border-box;
+}
+a{
+  color: var(--main-link);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 header h2 {
   font-size: 2rem;
@@ -84,14 +109,17 @@ footer a {
 footer div.source {
   text-align: left;
   font-size: 1rem;
-  background-color: white;
+  color: var(--main-text);
+  background-color: var(--main-bg);
   padding: 10px;
+  box-sizing: border-box;
 }
 footer div.banner {
   text-align: center;
   width: 100%;
   vertical-align: middle;
   padding: 10px;
+  box-sizing: border-box;
 }
 footer div.banner * {
   margin: 0px;
