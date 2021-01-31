@@ -1,0 +1,16 @@
+CACHE MANIFEST
+# Ver.20210131_01
+
+CACHE:
+index.html
+data/img_bell.png
+data/Onmtp-Ding02-2.mp3
+css/reset.css
+css/style.css
+
+NETWORK:
+
+FALLBACK:
+
+SETTINGS:
+prefer-online
