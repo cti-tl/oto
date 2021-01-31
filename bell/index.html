@@ -27,9 +27,19 @@
      <title>ベルを鳴らす！</title>
  </head>
  <body>
+    <script type="text/javascript">
+      if (navigator.serviceWorker) {
+        //(1)Service Workerのインストール
+        navigator.serviceWorker.register('./service-worker.js', { scope: '.' });
+        //(2)マニュフェストに変更があれば、Service Worker側でリソースの再キャッシュを行う
+        if (navigator.onLine) {
+          fetch("/site.appcache");
+        }
+      }
+    </script>
      <header><h2>ベルを鳴らす！</h2></header>
      <main>
-         <a onClick="sound()"><img width="80%" src="https://illustimage.com/photo/dl/13094.png?20200906"></a>
+         <a onClick="sound()"><img width="80%" src="https://illustimage.com/photo/dl/13094.png"></a>
          <audio id="sound-file" preload="auto" height="0px">
            <source src="https://otologic.jp/sounds/se/pre/Onmtp-Ding02-2.mp3" type="audio/mp3">
          </audio>
@@ -38,10 +48,11 @@
          <div class="source">
            <details>
              <summary>参照ソース</summary>
-             <p><small><a href="https://otologic.jp/free/se/ding01.html">音声データ [otologic.jp]</a></li></small></p>
-             <p><small><a href="https://illustimage.com/?dl=13094">イラストデータ [illustimage.com]</a></li></small></p>
-             <p><small><a href="https://syncer.jp/html5-javascript-hello-button">Javascript参照先 [syncer.jp]</a></li></small></p>
-             <p><small><a href="https://www.esz.co.jp/blog/2766.html">CSS参照先 [www.esz.co.jp]</a></li></small></p>
+             <p><small><a href="https://otologic.jp/free/se/ding01.html">音声データ [otologic.jp]</a></small></p>
+             <p><small><a href="https://illustimage.com/?dl=13094">イラストデータ [illustimage.com]</a></small></p>
+             <p><small><a href="https://syncer.jp/html5-javascript-hello-button">Javascript参照先 [syncer.jp]</a></small></p>
+             <p><small><a href="https://www.esz.co.jp/blog/2766.html">CSS参照先 [www.esz.co.jp]</a></small></p>
+             <p><small><a href="https://qiita.com/yosi-q/items/038abe51b76df70bcd00">キャッシュ操作 [qiita.com]</a></small></p>
            </details>
          </div>
          <div class="banner">
