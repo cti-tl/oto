@@ -6,7 +6,7 @@
  -->
   
  <!DOCTYPE html>
- <html lang="ja" prefix="og: http://ogp.me/ns#">
+ <html lang="ja" prefix="og: http://ogp.me/ns#" manifest="app.manifest">
  <head>
      <meta charset="UTF-8">
      <meta name="ベルを鳴らす！" content="index">
@@ -27,6 +27,7 @@
      <title>ベルを鳴らす！</title>
  </head>
  <body>
+   <!--
     <script type="text/javascript">
       if (navigator.serviceWorker) {
         //(1)Service Workerのインストール
@@ -37,6 +38,7 @@
         }
       }
     </script>
+     -->
      <header><h2>ベルを鳴らす！</h2></header>
      <main>
          <a onClick="sound()"><img width="80%" src="data/img_bell.png"></a>
