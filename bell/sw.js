@@ -3,6 +3,7 @@ const dynamicCacheName = 'dynamic-cache-v1';
 const assets = [
   './',
   './index.html',
+  './manifest.json',
   './css/style.css',
   './css/reset.css',
   './js/app.js',
