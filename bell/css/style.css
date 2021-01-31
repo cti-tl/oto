@@ -58,6 +58,7 @@ body {
     transparent 0,
     transparent 14px
   );
+  transition: .3s;
 }
 
 header {
@@ -70,10 +71,12 @@ h3 {
   color: var(--main-text);
   padding:10px;
   box-sizing: border-box;
+  transition: .3s;
 }
 a{
   color: var(--main-link);
   text-decoration: none;
+  transition: .3s;
 }
 a:hover {
   text-decoration: underline;
@@ -113,6 +116,7 @@ footer div.source {
   background-color: var(--main-bg);
   padding: 10px;
   box-sizing: border-box;
+  transition: .3s;
 }
 footer div.banner {
   text-align: center;
