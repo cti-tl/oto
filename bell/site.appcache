@@ -3,12 +3,14 @@ CACHE MANIFEST
 
 CACHE:
 index.html
+service-worker.js
 data/img_bell.png
 data/Onmtp-Ding02-2.mp3
 css/reset.css
 css/style.css
 
 NETWORK:
+site.appcache
 
 FALLBACK:
 
