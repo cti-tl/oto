@@ -46,6 +46,12 @@ body {
     "... footer ..."
     "... ...... ..." 0px
     / 0px 1fr 0px;
+  font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
 }
 
 body {
