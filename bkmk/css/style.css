@@ -1,0 +1,160 @@
+:root {
+  --main-text: #333;
+  --main-bg: #fff;
+  --main-stripe: #90cad44f;
+  --main-link: black;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-text: #ddd;
+    --main-bg: #000;
+    --main-stripe: #000000ec;
+    --main-link: gray;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none; /* CSS3 */
+  -moz-user-select: none; /* Firefox */
+  -webkit-user-select: none; /* Safari、Chromeなど */
+  -ms-user-select: none; /* IE10かららしい */
+}
+
+html {
+  overflow-y: scroll;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template:
+    "... ...... ..." 0px
+    "... header ..."
+    "... ...... ..." 0px
+    "... center ..." 1fr
+    "... ...... ..." 0px
+    "... footer ..."
+    "... ...... ..." 0px
+    / 0px 1fr 0px;
+  font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+}
+
+body {
+  /* 左斜め */
+  background-color: var(--main-stripe);
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--main-bg),
+    var(--main-bg) 7px,
+    transparent 0,
+    transparent 14px
+  );
+  transition: .3s;
+}
+
+header {
+  grid-area: header;
+}
+header h1,
+h2,
+h3 {
+  text-align: center;
+  color: var(--main-text);
+  padding:10px;
+  box-sizing: border-box;
+  transition: .3s;
+}
+a{
+  color: var(--main-link);
+  text-decoration: none;
+  transition: .3s;
+}
+a:hover {
+  text-decoration: underline;
+}
+header h2 {
+  font-size: 2rem;
+}
+main {
+  grid-area: center;
+}
+main {
+  text-align: center;
+}
+main img {
+  display: inline;
+  max-width: 400px;
+}
+main img:not([alt]) {
+  filter: none;
+}
+main textarea{
+  resize: vertical;
+  width:95%;
+  height:auto;
+}
+footer {
+  grid-area: footer;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+}
+footer a {
+  vertical-align: top;
+  width: auto;
+  height: auto;
+}
+footer div.source {
+  text-align: left;
+  font-size: 1rem;
+  color: var(--main-text);
+  background-color: var(--main-bg);
+  padding: 10px;
+  box-sizing: border-box;
+  transition: .3s;
+}
+footer div.banner {
+  text-align: center;
+  width: 100%;
+  vertical-align: middle;
+  padding: 10px;
+  box-sizing: border-box;
+}
+footer div.banner * {
+  margin: 0px;
+  padding: 0px;
+}
+footer div.banner img {
+  max-height: 80px;
+}
+footer div.copyright {
+  text-align: center;
+}
+footer div.copyright small {
+  color: gray;
+  font-size: max(12px,0.6rem);
+}
+@media screen and (max-width: 1000px) {
+  body {
+    grid-template:
+      "header"
+      "center" 1fr
+      "footer";
+  }
+}
