@@ -29,11 +29,11 @@
     />
     <meta property="og:url" content="https://bell.cti-tl.com/" />
     <meta property="og:site_name" content="bookmarklet Maker" />
-    <meta property="og:image" content="data/img_bell.png" />
+    <meta property="og:image" content="data/tool_icon.png" />
     <meta name="twitter:card" content="summary" />
     <link rel="manifest" href="manifest.json" />
-    <link rel="icon" type="image/png" href="data/img_bell.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="data/img_bell.png" />
+    <link rel="icon" type="image/png" href="data/tool_icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="data/tool_icon.png" />
     <link href="css/reset.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <title>bookmarklet Maker</title>
@@ -42,10 +42,14 @@
     <header><h2>bookmarklet Maker</h2></header>
     <main>
       <div>
-        <textarea id="test" rows="4" cols="40" onChange="jscomp()"></textarea>
+        <div><label>title</label></div>
+        <div><input type="textbox" id="title_name" onChange="jscomp()" value="bookmarklet"></input></div>
       </div>
-      <div><a href="#" onClick="jscomp()">test</a></div>
-      <div><a href="" id="bk">bookmarklet</a></div>
+      <div>
+        <div><label>body</label></div>
+        <div><textarea id="test" rows="4" cols="40" onChange="jscomp()"></textarea></div>
+      </div>
+      <div><p class="button1"><a href="" id="bk">bookmarklet</a></p></div>
     </main>
     <footer>
       <div class="banner">

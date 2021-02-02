@@ -1,0 +1,24 @@
+{
+  "name": "oto.cti-tl.com 2021",
+  "short_name": "cti-tl",
+  "start_url": "./index.html",
+  "background_color": "#fdfdfd",
+  "display": "standalone",
+  "theme_color": "#b723e4",
+  "orientation": "portrait-primary",
+
+  "icons": [
+    {
+      "src": "./data/tool_icon.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./data/tool_icon.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ]
+}
