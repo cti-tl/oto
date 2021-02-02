@@ -27,7 +27,7 @@
       property="og:description"
       content="ブックマークレットを作る！というシンプルな機能に特化したサービスです！"
     />
-    <meta property="og:url" content="https://bell.cti-tl.com/" />
+    <meta property="og:url" content="https://oto.cti-tl.com/" />
     <meta property="og:site_name" content="bookmarklet Maker" />
     <meta property="og:image" content="data/tool_icon.png" />
     <meta name="twitter:card" content="summary" />
@@ -42,12 +42,14 @@
     <header><h2>bookmarklet Maker</h2></header>
     <main>
       <div>
-        <div><label>title</label></div>
+        <div class="label"><label>Title</label></div>
         <div><input type="textbox" id="title_name" onChange="jscomp()" value="bookmarklet"></input></div>
       </div>
       <div>
-        <div><label>body</label></div>
-        <div><textarea id="test" rows="4" cols="40" onChange="jscomp()"></textarea></div>
+        <div class="label"><label>Body</label></div>
+        <div><textarea id="test" rows="4" cols="40" onChange="jscomp()" ondrop="dropData" ondragover="dragoverData">
+          
+        </textarea></div>
       </div>
       <div><p class="button1"><a href="" id="bk">bookmarklet</a></p></div>
     </main>
