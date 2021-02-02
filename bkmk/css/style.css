@@ -33,7 +33,7 @@ body {
 }
 
 body {
-  font-size: 2rem;
+  font-size: 16px;
   max-width: 800px;
   margin: 0 auto;
   display: grid;
@@ -102,6 +102,11 @@ main img {
 }
 main img:not([alt]) {
   filter: none;
+}
+main textarea{
+  resize: vertical;
+  width:95%;
+  height:auto;
 }
 footer {
   grid-area: footer;
