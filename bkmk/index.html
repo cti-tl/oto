@@ -31,11 +31,14 @@
     <meta property="og:site_name" content="bookmarklet Maker" />
     <meta property="og:image" content="data/tool_icon.png" />
     <meta name="twitter:card" content="summary" />
+    <link rel="stylesheet" href="codemirror/codemirror.css">
+    <script src="codemirror/codemirror.js"></script>
     <link rel="manifest" href="manifest.json" />
     <link rel="icon" type="image/png" href="data/tool_icon.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="data/tool_icon.png" />
     <link href="css/reset.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
+    <script src="codemirror/javascript.js"></script>
     <title>bookmarklet Maker</title>
   </head>
   <body>
@@ -47,7 +50,7 @@
       </div>
       <div>
         <div class="label"><label>Body</label></div>
-        <div><textarea id="test" rows="4" cols="40" onChange="jscomp()" ondrop="dropData" ondragover="dragoverData">
+        <div><textarea id="code" name="code" rows="4" cols="40" onChange="jscomp()" ondrop="dropData" ondragover="dragoverData">
           
         </textarea></div>
       </div>
@@ -80,6 +83,14 @@
         <small>Copyright © 2021 bcti-tl.com All Rights Reserved.</small>
       </div>
     </footer>
+    <script>
+      var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+        lineNumbers: true,
+        matchBrackets: true,
+        continueComments: "Enter",
+        extraKeys: {"Ctrl-Q": "toggleComment"}
+      });
+    </script>
     <!--<script src="js/beautify.min.js.map" defer></script>
     <script src="js/beautifier.min.js" defer></script>-->
     <script src="js/beautify.min.js" defer></script>
