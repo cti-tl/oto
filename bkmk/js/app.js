@@ -1,6 +1,8 @@
 function jscomp() {
   const e = document.querySelector("#test");
-  e.value = js_beautify(e.value);
+  e.value = js_beautify(e.value, {
+    indent_size: 2,
+  });
   change();
 }
 
