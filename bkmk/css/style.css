@@ -84,7 +84,8 @@ a:hover {
   text-decoration: underline;
 }
 input,
-textarea {
+textarea,
+.CodeMirror {
   -webkit-user-select: auto; /* Safari、Chromeなど */
 }
 
@@ -171,6 +172,7 @@ footer div.copyright small {
 .button1 {
   font-size: 12px;
   font-weight: bold;
+  margin-top: 20px;
 }
 .button1 a {
   color: #fff;
