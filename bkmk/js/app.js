@@ -1,5 +1,5 @@
 function jscomp() {
-  const e = document.querySelector("#test");
+  const e = document.querySelector("#code");
   e.value = js_beautify(e.value, {
     indent_size: 2,
   });
@@ -8,7 +8,7 @@ function jscomp() {
 
 function change() {
   const tn = document.querySelector("#title_name");
-  const e = document.querySelector("#test");
+  const e = document.querySelector("#code");
   const bk = document.querySelector("#bk");
   let t = e.value.replace(/\s+/g, " ");
   t = t.replace(/^ ?(\S.*)/, "$1").replace(/(.*\S) ?$/, "$1");
