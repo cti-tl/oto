@@ -49,11 +49,11 @@
     <main>
       <div>
         <div class="label"><label>Title</label></div>
-        <div><input type="textbox" id="title_name" onChange="jscompCM()" value="bookmarklet"></input></div>
+        <div class="contents"><input type="textbox" id="title_name" onChange="jscompCM()" value="bookmarklet"></input></div>
       </div>
       <div>
         <div class="label"><label>Body</label></div>
-        <div><textarea id="code" name="code" onChange="jscompCM()"></textarea></div>
+        <div class="contents"><textarea id="code" name="code" onChange="jscompCM()"></textarea></div>
       </div>
       <div><p class="button1"><a href="" id="bk">bookmarklet</a></p></div>
     </main>
@@ -94,7 +94,7 @@
         continueComments: "Enter",
         extraKeys: {"Ctrl-Q": "toggleComment"}
       });
-      editor.setSize("95%", "100%");
+      editor.setSize("100%", "100%");
       editor.on('blur',function(){
           jscompCM();
       });
