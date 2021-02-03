@@ -113,14 +113,18 @@ main div.label {
   padding-left: 10px;
 }
 main input[type="textbox"] {
-  width: 95%;
+  width: 100%;
   height: auto;
 }
 main textarea {
   resize: vertical;
-  width: 95%;
+  width: 100%;
   min-height: 280px;
   height: auto;
+}
+main div.contents {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 footer {
   grid-area: footer;
