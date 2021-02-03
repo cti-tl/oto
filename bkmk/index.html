@@ -93,10 +93,8 @@
         extraKeys: {"Ctrl-Q": "toggleComment"}
       });
       editor.setSize("100%", "100%");
-      editor.save();
       editor.on('change',function(){
           jscompCM();
-          editor.save();
       });
     </script>
     <!--<script src="js/beautify.min.js.map" defer></script>
