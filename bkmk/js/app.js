@@ -3,6 +3,9 @@ function jscomp() {
   e.value = js_beautify(e.value, {
     indent_size: 2,
   });
+  var doc = editor.getDoc();
+  doc.setValue(e.value);
+  editor.clearHistory();
   change();
 }
 
