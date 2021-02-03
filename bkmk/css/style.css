@@ -87,6 +87,10 @@ input,
 textarea {
   -webkit-user-select: auto; /* Safari、Chromeなど */
 }
+
+.CodeMirror {
+    text-align: left;
+}
 header h2 {
   font-size: 2rem;
 }
