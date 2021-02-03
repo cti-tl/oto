@@ -12,8 +12,12 @@ function jscomp() {
 function change() {
   const tn = document.querySelector("#title_name");
   const e = document.querySelector("#code");
+  mkLink(tn.value,e.value);
+}
+
+function mkLink(title,url){
   const bk = document.querySelector("#bk");
-  let t = e.value.replace(/\s+/g, " ");
+  let t = url.replace(/\s+/g, " ");
   t = t.replace(/^ ?(\S.*)/, "$1").replace(/(.*\S) ?$/, "$1");
   t = t.indexOf("javascript:") < 0 ? "javascript:" + t : t;
   // t = t.replace(/\"/g, "\\x22");
@@ -21,7 +25,7 @@ function change() {
   //	link.href = t;
   //	count.innerHTML = ' ('+ t.length + ' chars)';
   bk.href = t;
-  bk.innerHTML = tn.value;
+  bk.innerHTML = title;
 }
 
 const dragoverData = function (event) {
