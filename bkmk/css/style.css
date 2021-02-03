@@ -89,7 +89,8 @@ textarea {
 }
 
 .CodeMirror {
-    text-align: left;
+  text-align: left;
+  resize: vertical;
 }
 header h2 {
   font-size: 2rem;
@@ -115,7 +116,7 @@ main input[type="textbox"] {
   width: 95%;
   height: auto;
 }
-main textarea,main div.CodeMirror {
+main textarea {
   resize: vertical;
   width: 95%;
   min-height: 280px;
