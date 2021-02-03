@@ -80,6 +80,9 @@ a {
   text-decoration: none;
   transition: 0.3s;
 }
+label {
+  color: var(--main-text);
+}
 a:hover {
   text-decoration: underline;
 }
