@@ -88,6 +88,7 @@
       var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
         lineWrapping: true,
         lineNumbers: true,
+        mode:  "javascript",
         matchBrackets: true,
         continueComments: "Enter",
         extraKeys: {"Ctrl-Q": "toggleComment"}
