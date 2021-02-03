@@ -9,6 +9,17 @@ function jscomp() {
   change();
 }
 
+function jscompCM() {
+  const tn = document.querySelector("#title_name");
+  var doc = editor.getDoc();
+  const e = document.querySelector("#code");
+  doc.setValue(js_beautify(doc.getValue(), {
+    indent_size: 2,
+  }));
+  editor.clearHistory();
+  mkLink(tn.value,doc.getValue());
+}
+
 function change() {
   const tn = document.querySelector("#title_name");
   const e = document.querySelector("#code");
