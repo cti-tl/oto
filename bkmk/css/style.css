@@ -45,7 +45,7 @@ body {
     "... ...... ..." 0px
     "... footer ..." 120px
     "... ...... ..." 0px
-    / 0px 1fr 0px;
+    / 0px minmax(800px, 1fr) 0px;
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
     "Hiragino Sans", Meiryo, sans-serif;
 }
@@ -219,11 +219,11 @@ footer div.copyright small {
   filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#025AB1', EndColorStr='#1C71C5');
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   body {
     grid-template:
       "header"
       "center" 1fr
-      "footer" 100px;
+      "footer" 100px / 100%;
   }
 }
