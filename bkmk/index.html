@@ -105,6 +105,16 @@
       editor.on('blur',function(){
           jscompCM();
       });
+      editor.on('drop',function(e){
+        // e.preventDefault();
+        // 移動された要素の id を取得して、その要素を target の DOM に追加する
+        var dt = event.dataTransfer;
+        var files = dt.files;
+        var count = files.length;
+        for (var i = 0; i < files.length; i++) {
+            alert('Drop File : ' + files[i].name);
+        }
+      });
     </script>
     <!--<script src="js/beautify.min.js.map" defer></script>
     <script src="js/beautifier.min.js" defer></script>-->
