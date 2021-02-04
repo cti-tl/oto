@@ -96,10 +96,11 @@
       });
       editor.setSize("100%", "100%");
       var doc = editor.getDoc();
-      doc.setValue(`javascript: (function(d) {
+      doc.setValue(`javascript: ((d) => {
   let ById = (id) => d.getElementById(id);
   let ByNames = (name, index = 0) => d.getElementsByName(name)[index];
   let q = (selector, index = 0) => d.querySelectorAll(selector)[index];
+  alert('test');
 })(document);`);
       editor.on('blur',function(){
           jscompCM();
