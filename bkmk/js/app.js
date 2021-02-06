@@ -13,20 +13,22 @@ function jscompCM() {
   const tn = document.querySelector("#title_name");
   var doc = editor.getDoc();
   const e = document.querySelector("#code");
-  doc.setValue(js_beautify(doc.getValue(), {
-    indent_size: 2,
-  }));
+  doc.setValue(
+    js_beautify(decodeURI(doc.getValue()), {
+      indent_size: 2,
+    })
+  );
   editor.clearHistory();
-  mkLink(tn.value,doc.getValue());
+  mkLink(tn.value, doc.getValue());
 }
 
 function change() {
   const tn = document.querySelector("#title_name");
   const e = document.querySelector("#code");
-  mkLink(tn.value,e.value);
+  mkLink(tn.value, e.value);
 }
 
-function mkLink(title,url){
+function mkLink(title, url) {
   const bk = document.querySelector("#bk");
   let t = url.replace(/\s+/g, " ");
   t = t.replace(/^ ?(\S.*)/, "$1").replace(/(.*\S) ?$/, "$1");
