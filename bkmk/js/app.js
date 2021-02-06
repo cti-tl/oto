@@ -30,7 +30,6 @@ function mkLink(title, url) {
   bk.innerHTML = title;
 }
 
-/*
 const dragoverData = function (event) {
   alert("test");
   if (event.preventDefault) {
@@ -47,4 +46,3 @@ const dropData = function (event) {
     event.preventDefault();
   }
 };
-/*
