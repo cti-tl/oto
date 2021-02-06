@@ -1,6 +1,6 @@
 {
   "name": "oto.cti-tl.com 2021",
-  "short_name": "cti-tl",
+  "short_name": "oto.cti-tl",
   "start_url": "./index.html",
   "background_color": "#fdfdfd",
   "display": "standalone",

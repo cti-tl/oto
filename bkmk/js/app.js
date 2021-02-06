@@ -1,17 +1,6 @@
-function jscomp() {
-  const e = document.querySelector("#code");
-  e.value = js_beautify(e.value, {
-    indent_size: 2,
-  });
-  var doc = editor.getDoc();
-  doc.setValue(e.value);
-  editor.clearHistory();
-  change();
-}
-
 function jscompCM() {
   const tn = document.querySelector("#title_name");
-  var doc = editor.getDoc();
+  let doc = editor.getDoc();
   const e = document.querySelector("#code");
   doc.setValue(
     js_beautify(decodeURI(doc.getValue()), {
