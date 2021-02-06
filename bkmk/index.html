@@ -27,7 +27,7 @@
       property="og:description"
       content="ブックマークレットを作る！というシンプルな機能に特化したサービスです！"
     />
-    <meta property="og:url" content="https://oto.cti-tl.com/" />
+    <meta property="og:url" content="https://oto.cti-tl.com/bkmk" />
     <meta property="og:site_name" content="bookmarklet Maker" />
     <meta property="og:image" content="data/tool_icon.png" />
     <meta name="twitter:card" content="summary" />
@@ -53,71 +53,19 @@
       </div>
       <div>
         <div class="label"><label>Body</label></div>
-        <div class="contents"><textarea id="code" name="code" onChange="jscompCM()"></textarea></div>
+        <div class="contents"><textarea id="code" name="code"></textarea></div>
       </div>
       <div><p class="button1"><a href="" id="bk">bookmarklet</a></p></div>
     </main>
     <footer>
       <div class="banner">
-        <a
-          href="https://px.a8.net/svt/ejp?a8mat=3B7IB6+BD0TDE+CO4+65ME9"
-          rel="nofollow"
-          aria-label="banner"
-        >
-          <img
-            border="0"
-            width="100%"
-            height="auto"
-            alt=""
-            src="https://www21.a8.net/svt/bgt?aid=200224626687&wid=001&eno=01&mid=s00000001642001034000&mc=1"
-          />
-          <img
-            border="0"
-            width="1"
-            height="1"
-            src="https://www14.a8.net/0.gif?a8mat=3B7IB6+BD0TDE+CO4+65ME9"
-            alt=""
-          />
-        </a>
+        <script src="js/bannerMaker.js" async></script>
       </div>
       <div class="copyright">
         <small>Copyright © 2021 bcti-tl.com All Rights Reserved.</small>
       </div>
     </footer>
-    <script>
-      var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
-        lineWrapping: true,
-        lineNumbers: true,
-        mode:  "javascript",
-        direction: "ltr",
-        matchBrackets: true,
-        continueComments: "Enter",
-        extraKeys: {"Ctrl-Q": "toggleComment"}
-      });
-      editor.setSize("100%", "100%");
-      var doc = editor.getDoc();
-      doc.setValue(`javascript: (function(d){
-  let ById = (id) => d.getElementById(id);
-  let ByNames = (name, index = 0) => d.getElementsByName(name)[index];
-  let q = (selector, index = 0) => d.querySelectorAll(selector)[index];
-  alert('test');
-})(document);`);
-      editor.on('blur',function(){
-          jscompCM();
-      });
-      editor.on('drop',function(e){
-        // e.preventDefault();
-        // 移動された要素の id を取得して、その要素を target の DOM に追加する
-        var dt = event.dataTransfer;
-        var files = dt.files;
-        var count = files.length;
-        for (var i = 0; i < files.length; i++) {
-            alert('Drop File : ' + files[i].name);
-        }
-      });
-    </script>
-    <!--<script src="js/beautify.min.js.map" defer></script>
-    <script src="js/beautifier.min.js" defer></script>-->
+    <script src="js/startCodemirror.js" async></script>
     <script src="js/beautify.min.js" defer></script>
     <script src="js/app.js" defer></script>
   </body>
