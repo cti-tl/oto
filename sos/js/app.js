@@ -44,6 +44,10 @@ function sos_off() {
 
 function sos() {
   let i = 0;
+  let e = document.querySelectorAll("main a");
+  [].forEach.call(e, function (elem) {
+    elem.className = "btn-square-white";
+  });
   let t = setInterval(function () {
     console.log(i);
     switch (i) {
@@ -71,6 +75,9 @@ function sos() {
         break;
       case 28:
         clearInterval(t);
+        [].forEach.call(e, function (elem) {
+          elem.className = "btn-square";
+        });
         break;
       default:
     }

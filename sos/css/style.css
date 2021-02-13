@@ -159,6 +159,24 @@ footer div.copyright small {
   transform: translateY(4px); /*下に動く*/
   border-bottom: none; /*線を消す*/
 }
+.btn-square-white {
+  display: inline-block;
+  width: 250px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  background: #ffffff; /*ボタン色*/
+  color: rgb(110, 110, 110);
+  border-bottom: solid 4px #afafaf;
+  border-radius: 3px;
+}
+.btn-square-white:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px); /*下に動く*/
+  border-bottom: none; /*線を消す*/
+}
 @media screen and (max-width: 1000px) {
   body {
     grid-template:
