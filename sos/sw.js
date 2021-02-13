@@ -1,6 +1,6 @@
 const staticCacheName = "static-cache-v1";
 const dynamicCacheName = "dynamic-cache-v2";
-const assets = [
+/* const assets = [
   "./",
   "./index.html",
   "./manifest.json",
@@ -9,7 +9,7 @@ const assets = [
   "./js/app.js",
   "./js/audio.js",
   "./data/img_bell.png",
-];
+]; */
 
 self.addEventListener("install", (evt) => {
   evt.waitUntil(
