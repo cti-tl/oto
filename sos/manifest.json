@@ -1,24 +1,24 @@
 {
-    "name": "bell.cti-tl.com 2021",
-    "short_name": "cti-tl",
-    "start_url": "./index.html",
-    "background_color": "#fdfdfd",
-    "display": "standalone",
-    "theme_color": "#b723e4",
-    "orientation": "portrait-primary",
-  
-    "icons": [
-      {
-        "src": "./data/img_bell.png",
-        "type": "image/png",
-        "sizes": "192x192",
-        "purpose": "any maskable"
-      },
-      {
-        "src": "./data/img_bell.png",
-        "type": "image/png",
-        "sizes": "512x512",
-        "purpose": "any maskable"
-      }
-    ]
-  }
+  "name": "SOS Tools 2021",
+  "short_name": "SOS Tools",
+  "start_url": "./index.html",
+  "background_color": "#fdfdfd",
+  "display": "standalone",
+  "theme_color": "#b723e4",
+  "orientation": "portrait-primary",
+
+  "icons": [
+    {
+      "src": "./data/h.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./data/h.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ]
+}
