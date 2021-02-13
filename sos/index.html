@@ -4,33 +4,36 @@
     // This project is licensed under the MIT License
     // https://opensource.org/licenses/mit-license.php
  -->
-  
- <!DOCTYPE html>
- <html lang="ja" prefix="og: http://ogp.me/ns#">
- <head>
-     <meta charset="UTF-8">
-     <meta name="ベルを鳴らす！" content="index">
-     <meta name="Description" content="ベルを鳴らす！というシンプルな機能に特化したサービスです！">
-     <meta name="theme-color" content="#317EFB"/>
-     <meta name="apple-mobile-web-app-capable" content="yes">
-     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-     <meta property="og:title" content="ベルを鳴らす！">
-     <meta property="og:type" content="website">
-     <meta property="og:description" content="ベルを鳴らす！というシンプルな機能に特化したサービスです！">
-     <meta property="og:url" content="https://bell.cti-tl.com/">
-     <meta property="og:site_name" content="ベルを鳴らす！">
-     <meta property="og:image" content="data/img_bell.png">
-     <meta name="twitter:card" content="summary">
-     <link rel="manifest" href="manifest.json" />
-     <link rel="icon" type="image/png" href="data/img_bell.png">
-     <link rel="apple-touch-icon" sizes="180x180" href="data/img_bell.png">
-     <link href="css/reset.css" rel="stylesheet">
-     <link href="css/style.css" rel="stylesheet">
-     <title>ベルを鳴らす！</title>
- </head>
- <body>
-   <!--
+
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="緊急アラーム" content="index" />
+    <meta name="Description" content="緊急アラーム" />
+    <meta name="theme-color" content="#317EFB" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0"
+    />
+    <meta property="og:title" content="緊急アラーム" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="緊急アラーム" />
+    <meta property="og:url" content="https://bell.cti-tl.com/" />
+    <meta property="og:site_name" content="緊急アラーム" />
+    <meta property="og:image" content="data/img_bell.png" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" type="image/png" href="data/h.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="data/h.png" />
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <title>緊急アラーム</title>
+  </head>
+  <body>
+    <!--
     <script type="text/javascript">
       if (navigator.serviceWorker) {
         //(1)Service Workerのインストール
@@ -42,35 +45,61 @@
       }
     </script>
      -->
-     <header><h2>ベルを鳴らす！</h2></header>
-     <main>
-         <a onClick="sound()"><img width="80%" src="data/img_bell.png" alt="bell"></a>
-         <audio id="sound-file" preload="auto" height="0px">
-            <source src="" id="mp3" type="audio/mp3">
-            <!--<source src="data/Onmtp-Ding02-2.mp3" type="audio/mp3">-->
-         </audio>
-     </main>
-     <footer>
-         <div class="source">
-           <details>
-             <summary>参照ソース</summary>
-             <p><small><a href="https://otologic.jp/free/se/ding01.html">音声データ [otologic.jp]</a></small></p>
-             <p><small><a href="https://illustimage.com/?dl=13094">イラストデータ [illustimage.com]</a></small></p>
-             <p><small><a href="https://syncer.jp/html5-javascript-hello-button">Javascript参照先 [syncer.jp]</a></small></p>
-             <p><small><a href="https://www.esz.co.jp/blog/2766.html">CSS参照先 [www.esz.co.jp]</a></small></p>
-             <p><small><a href="https://qiita.com/yosi-q/items/038abe51b76df70bcd00">キャッシュ操作 [qiita.com]</a></small></p>
-           </details>
-         </div>
-         <div class="banner">
-            <a href="https://px.a8.net/svt/ejp?a8mat=3B7IB6+BD0TDE+CO4+65ME9" rel="nofollow" aria-label="banner">
-              <img border="0" width="100%" height="auto" alt="" src="https://www21.a8.net/svt/bgt?aid=200224626687&wid=001&eno=01&mid=s00000001642001034000&mc=1">
-              <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=3B7IB6+BD0TDE+CO4+65ME9" alt="">
-            </a>
-          </div>
-         <div class="copyright"><small>Copyright © 2021 bell.cti-tl.com All Rights Reserved.</small></div>
-     </footer>
-     <script src="js/audio.js" async></script>
-     <script src="js/app.js" defer></script>
- </body>
- </html>
- 
+    <header><h2>緊急アラーム</h2></header>
+    <main>
+      <a onClick="sound()"><img width="80%" src="data/h.png" alt="bell" /></a>
+      <audio id="sound-file" preload="auto" height="0px">
+        <source src="" id="mp3" type="audio/mp3" />
+        <!--<source src="data/Onmtp-Ding02-2.mp3" type="audio/mp3">-->
+      </audio>
+    </main>
+    <footer>
+      <div class="source">
+        <details>
+          <summary>参照ソース</summary>
+          <p>
+            <small
+              ><a href="https://otologic.jp/free/se/ding01.html"
+                >音声データ [otologic.jp]</a
+              ></small
+            >
+          </p>
+          <p>
+            <small
+              ><a href="https://illustimage.com/?dl=13094"
+                >イラストデータ [illustimage.com]</a
+              ></small
+            >
+          </p>
+          <p>
+            <small
+              ><a href="https://syncer.jp/html5-javascript-hello-button"
+                >Javascript参照先 [syncer.jp]</a
+              ></small
+            >
+          </p>
+          <p>
+            <small
+              ><a href="https://www.esz.co.jp/blog/2766.html"
+                >CSS参照先 [www.esz.co.jp]</a
+              ></small
+            >
+          </p>
+          <p>
+            <small
+              ><a href="https://qiita.com/yosi-q/items/038abe51b76df70bcd00"
+                >キャッシュ操作 [qiita.com]</a
+              ></small
+            >
+          </p>
+        </details>
+      </div>
+      <div class="banner"></div>
+      <div class="copyright">
+        <small>Copyright © 2021 bell.cti-tl.com All Rights Reserved.</small>
+      </div>
+    </footer>
+    <script src="js/audio.js" async></script>
+    <script src="js/app.js" defer></script>
+  </body>
+</html>

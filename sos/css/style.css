@@ -1,17 +1,17 @@
-:root {
+/* :root {
   --main-text: #333;
   --main-bg: #fff;
   --main-stripe: #90cad44f;
   --main-link: black;
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --main-text: #ddd;
-    --main-bg: #000;
-    --main-stripe: #000000ec;
-    --main-link: gray;
-  }
+@media (prefers-color-scheme: dark) { */
+:root {
+  --main-text: #ddd;
+  --main-bg: #000;
+  --main-stripe: #000000ec;
+  --main-link: gray;
 }
+/* } */
 
 * {
   margin: 0;
@@ -46,12 +46,8 @@ body {
     "... footer ..."
     "... ...... ..." 0px
     / 0px 1fr 0px;
-  font-family: "Helvetica Neue",
-    Arial,
-    "Hiragino Kaku Gothic ProN",
-    "Hiragino Sans",
-    Meiryo,
-    sans-serif;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif;
 }
 
 body {
@@ -64,7 +60,7 @@ body {
     transparent 0,
     transparent 14px
   );
-  transition: .3s;
+  transition: 0.3s;
 }
 
 header {
@@ -75,14 +71,14 @@ h2,
 h3 {
   text-align: center;
   color: var(--main-text);
-  padding:10px;
+  padding: 10px;
   box-sizing: border-box;
-  transition: .3s;
+  transition: 0.3s;
 }
-a{
+a {
   color: var(--main-link);
   text-decoration: none;
-  transition: .3s;
+  transition: 0.3s;
 }
 a:hover {
   text-decoration: underline;
@@ -122,7 +118,7 @@ footer div.source {
   background-color: var(--main-bg);
   padding: 10px;
   box-sizing: border-box;
-  transition: .3s;
+  transition: 0.3s;
 }
 footer div.banner {
   text-align: center;
@@ -143,7 +139,7 @@ footer div.copyright {
 }
 footer div.copyright small {
   color: gray;
-  font-size: max(12px,0.6rem);
+  font-size: max(12px, 0.6rem);
 }
 @media screen and (max-width: 1000px) {
   body {
