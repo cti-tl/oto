@@ -53,13 +53,13 @@ body {
 body {
   /* 左斜め */
   background-color: var(--main-stripe);
-  background-image: repeating-linear-gradient(
+  /*   background-image: repeating-linear-gradient(
     45deg,
     var(--main-bg),
     var(--main-bg) 7px,
     transparent 0,
     transparent 14px
-  );
+  ); */
   transition: 0.3s;
 }
 
