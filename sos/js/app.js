@@ -1,3 +1,6 @@
+let i = -1;
+let t = null;
+
 function sound() {
   // 対象となるID名
   var id = "sound-file";
@@ -43,12 +46,22 @@ function sos_off() {
 }
 
 function sos() {
-  let i = 0;
   let e = document.querySelectorAll("main a");
+  if (i >= 0 && i < 99) {
+    i = -1;
+    sos_off();
+    clearInterval(t);
+    [].forEach.call(e, function (elem) {
+      elem.className = "btn-square";
+    });
+    return 0;
+  } else {
+    i = 0;
+  }
   [].forEach.call(e, function (elem) {
     elem.className = "btn-square-white";
   });
-  let t = setInterval(function () {
+  t = setInterval(function () {
     console.log(i);
     switch (i) {
       case 1:
@@ -73,7 +86,11 @@ function sos() {
       case 27:
         sos_off();
         break;
-      case 28:
+      case 30:
+        i = 0;
+        break;
+      case -1:
+        sos_off();
         clearInterval(t);
         [].forEach.call(e, function (elem) {
           elem.className = "btn-square";
