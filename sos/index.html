@@ -31,6 +31,13 @@
     <link rel="apple-touch-icon" sizes="180x180" href="data/h.png" />
     <link href="css/reset.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous"
+    />
+    <script src="js/sos.js"></script>
     <title>SOS Tools</title>
   </head>
   <body>
@@ -49,14 +56,24 @@
     <header><h2>SOS Tools</h2></header>
     <main>
       <p>
-        <a href="#" class="btn-square" onClick="sound()">ホイッスル</a>
+        <a href="#" class="btn-square" onClick="sound()"
+          ><i class="fas fa-volume-up fa-fw"></i> ホイッスル</a
+        >
       </p>
       <audio id="sound-file" preload="auto" height="0px">
         <source src="" id="mp3" type="audio/mp3" />
         <!--<source src="data/Onmtp-Ding02-2.mp3" type="audio/mp3">-->
       </audio>
-      <p><a href="#" class="btn-square" onClick="sos()">救難信号(光)</a></p>
-      <p><a href="tel:171" class="btn-square">伝言ダイヤル</a></p>
+      <p>
+        <a href="#" class="btn-square" onClick="dosos()"
+          ><i class="far fa-lightbulb fa-fw"></i> 救難信号</a
+        >
+      </p>
+      <p>
+        <a href="tel:171" class="btn-square"
+          ><i class="fas fa-phone fa-fw"></i> 伝言ダイヤル</a
+        >
+      </p>
     </main>
     <footer>
       <div class="banner"></div>

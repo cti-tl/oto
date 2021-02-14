@@ -1,5 +1,7 @@
 let i = -1;
 let t = null;
+let e = document.querySelectorAll("main a");
+let s = new SOS();
 
 function sound() {
   // 対象となるID名
@@ -43,6 +45,26 @@ function sos_on() {
 }
 function sos_off() {
   document.body.style.backgroundColor = "black";
+}
+function dosos() {
+  s.doToggle(
+    function () {
+      document.body.style.backgroundColor = "white";
+    },
+    function () {
+      document.body.style.backgroundColor = "black";
+    },
+    function () {
+      [].forEach.call(e, function (elem) {
+        elem.className = "btn-square-white";
+      });
+    },
+    function () {
+      [].forEach.call(e, function (elem) {
+        elem.className = "btn-square";
+      });
+    }
+  );
 }
 
 function sos() {
@@ -129,6 +151,7 @@ if ("serviceWorker" in navigator) {
           "サービスワーカーの登録が以下のスコープで完了! ",
           reg.scope
         );
+        reg.update();
       })
       .catch((err) => {
         return console.log("サービスワーカーの登録が失敗: ", err);

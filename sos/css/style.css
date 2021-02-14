@@ -143,10 +143,12 @@ footer div.copyright small {
 }
 .btn-square {
   display: inline-block;
-  width: 250px;
+  min-width: 280px;
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 20px;
   margin-bottom: 10px;
+  text-align: left;
   text-decoration: none;
   background: #d82c2c; /*ボタン色*/
   color: #fff;
@@ -162,10 +164,12 @@ footer div.copyright small {
 }
 .btn-square-white {
   display: inline-block;
-  width: 250px;
+  min-width: 280px;
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 20px;
   margin-bottom: 10px;
+  text-align: left;
   text-decoration: none;
   background: #ffffff; /*ボタン色*/
   color: rgb(110, 110, 110);
